@@ -33,7 +33,6 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
