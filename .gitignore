@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/mujoco-python/.env
+/mujoco-python/MUJOCO_LOG.TXT
+/mujoco-python/.env
+/mujoco-python/MUJOCO_LOG.TXT
