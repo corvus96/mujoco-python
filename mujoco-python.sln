@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "mujoco-python", "mujoco-python\mujoco-python.pyproj", "{EA894D3B-B541-4574-8E86-46D64259C78B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pendulum", "Pendulum", "{18186619-B466-41DB-9E39-59F4AC34E9E0}"
+	ProjectSection(SolutionItems) = preProject
+		simple_pendulum.xml = simple_pendulum.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "universal_robots_ur5e", "universal_robots_ur5e", "{EC96759E-A3B1-4B1B-9784-EFBD537171E3}"
+	ProjectSection(SolutionItems) = preProject
+		scene.xml = scene.xml
+		ur5e.png = ur5e.png
+		ur5e.xml = ur5e.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{7F1EFE9B-6726-4C20-8646-42C488CBD287}"
+	ProjectSection(SolutionItems) = preProject
+		assets\base_0.obj = assets\base_0.obj
+		assets\base_1.obj = assets\base_1.obj
+		assets\forearm_0.obj = assets\forearm_0.obj
+		assets\forearm_1.obj = assets\forearm_1.obj
+		assets\forearm_2.obj = assets\forearm_2.obj
+		assets\forearm_3.obj = assets\forearm_3.obj
+		assets\shoulder_0.obj = assets\shoulder_0.obj
+		assets\shoulder_1.obj = assets\shoulder_1.obj
+		assets\shoulder_2.obj = assets\shoulder_2.obj
+		assets\upperarm_0.obj = assets\upperarm_0.obj
+		assets\upperarm_1.obj = assets\upperarm_1.obj
+		assets\upperarm_2.obj = assets\upperarm_2.obj
+		assets\upperarm_3.obj = assets\upperarm_3.obj
+		assets\wrist1_0.obj = assets\wrist1_0.obj
+		assets\wrist1_1.obj = assets\wrist1_1.obj
+		assets\wrist1_2.obj = assets\wrist1_2.obj
+		assets\wrist2_0.obj = assets\wrist2_0.obj
+		assets\wrist2_1.obj = assets\wrist2_1.obj
+		assets\wrist2_2.obj = assets\wrist2_2.obj
+		assets\wrist3.obj = assets\wrist3.obj
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA894D3B-B541-4574-8E86-46D64259C78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA894D3B-B541-4574-8E86-46D64259C78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F1EFE9B-6726-4C20-8646-42C488CBD287} = {EC96759E-A3B1-4B1B-9784-EFBD537171E3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EFEBD8C-0728-48B4-A4D9-C53914FAA876}
+	EndGlobalSection
+EndGlobal
