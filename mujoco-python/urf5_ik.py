@@ -10,7 +10,7 @@ import os
 load_dotenv()
 
 # Now you can access your environment variables
-pc_dir = os.getenv("PC_DIR")
+pc_dir = os.getenv("PC_FOLDER")
 
 
 def main():
