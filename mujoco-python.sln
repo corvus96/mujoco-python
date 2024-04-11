@@ -14,6 +14,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "universal_robots_ur5e", "un
 	ProjectSection(SolutionItems) = preProject
 		scene.xml = scene.xml
 		ur5e.png = ur5e.png
+		table.xml = table.xml
 		ur5e.xml = ur5e.xml
 	EndProjectSection
 EndProject
