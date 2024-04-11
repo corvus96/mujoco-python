@@ -1,10 +1,18 @@
 import mujoco as mj
 from mujoco.glfw import glfw
 import numpy as np
+from dotenv import load_dotenv
 import os
 import matplotlib.pyplot as plt
 
-xml_path = "C:/Users/guill/source/repos/mujoco-python/simple_pendulum.xml"
+# Load variables from .env file
+load_dotenv()
+
+# Now you can access your environment variables
+pc_dir = os.getenv("PC_FOLDER")
+
+
+xml_path = pc_dir + "/mujoco-python/simple_pendulum.xml"
 simend = 10
 
 # For callback functions
