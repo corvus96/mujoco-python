@@ -13,8 +13,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "universal_robots_ur5e", "universal_robots_ur5e", "{EC96759E-A3B1-4B1B-9784-EFBD537171E3}"
 	ProjectSection(SolutionItems) = preProject
 		scene.xml = scene.xml
-		ur5e.png = ur5e.png
 		table.xml = table.xml
+		ur5e.png = ur5e.png
 		ur5e.xml = ur5e.xml
 	EndProjectSection
 EndProject
@@ -40,6 +40,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{7F1EFE
 		assets\wrist2_1.obj = assets\wrist2_1.obj
 		assets\wrist2_2.obj = assets\wrist2_2.obj
 		assets\wrist3.obj = assets\wrist3.obj
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Car", "Car", "{E03DEC87-88ED-43B7-9F64-9B8829325271}"
+	ProjectSection(SolutionItems) = preProject
+		diff_car.xml = diff_car.xml
 	EndProjectSection
 EndProject
 Global
