@@ -22,7 +22,7 @@ def control_inv():
     data = mujoco.MjData(model)
     # Get the car id
     body_id = model.body("car").id
-    goal = [1, 1]
+    goal = [1, 1, 0]
     car = Car(model, data, 0.03, 0.06)
     with mujoco.viewer.launch_passive(model, data, show_left_ui=False,
       show_right_ui=False,) as viewer:
@@ -34,7 +34,7 @@ def control_inv():
       start = time.time()
       while viewer.is_running() and time.time() - start < simu_time:
         step_start = time.time()
-        car.compute_pose(goal, body_id, 100, 0.2)
+        car.compute_pose(goal, body_id, 100, 0.001, 0.1)
         print("actual position ({},{})".format(data.body(body_id).xpos[0],data.body(body_id).xpos[1]))
         # Pick up changes to the physics state, apply perturbations, update options from GUI.
         viewer.sync()

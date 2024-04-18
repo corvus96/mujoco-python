@@ -10,9 +10,10 @@ class Car:
         self.wheel_radius = wheel_radius
         self.robot_base = robot_base
         self.prev_error = [0.0, 0.0] # index 0 = velocity error and index 1 = omega_error 
-    
+
     def check_limits(self):
         pass
+
     def update_state(self):
         # Get current state variables
         omega_r = self.data.sensordata[0]
@@ -28,9 +29,9 @@ class Car:
         return kp * e + kd * e_prime
 
     def compute_pose(self,goal, body_id, kp, kd, threshold=0.2):
-        linear_ctrl = 1
-        condition = 99999
-        if condition >= threshold:
+        linear_ctrl = 0.5
+        condition = goal - self.data.body(body_id).xpos
+        if np.linalg.norm(condition) >= threshold:
             # position control
             x = self.data.body(body_id).xpos[0]
             y = self.data.body(body_id).xpos[1]
@@ -43,8 +44,8 @@ class Car:
             self.data.ctrl[0] = linear_ctrl - w_ctrl
             self.data.ctrl[1] = linear_ctrl + w_ctrl
             mujoco.mj_step(self.model, self.data)
-            condition = np.sqrt((x - goal[0])**2 + (y - goal[1])**2)
             #orientation control
+           
 
 
 
