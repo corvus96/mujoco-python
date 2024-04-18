@@ -55,7 +55,7 @@
 	</actuator>
 
 	<sensor>
-		<jointpos joint="left" noise="0.2" />
-		<jointvel joint="right" noise="1" />
+		<jointvel joint="left" />
+		<jointvel joint="right" />
 	</sensor>
 </mujoco>

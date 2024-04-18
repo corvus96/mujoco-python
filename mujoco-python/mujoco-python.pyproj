@@ -37,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="diff_car.py" />
+    <Compile Include="kinematics\diff_mobile_control.py" />
     <Compile Include="kinematics\inverse_kinematics.py" />
     <Compile Include="mujoco_python.py" />
     <Compile Include="pendulum.py" />
